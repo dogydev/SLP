@@ -22,6 +22,7 @@ SOFTWARE."""
 
 from random import randrange
 
+
 class SLP(object):
 
     def __init__(self, lr, n):
@@ -54,8 +55,10 @@ class SLP(object):
         inputnumbers = self.feedforward(inputs)
         error = target - inputnumbers
 
-        for i in range(len(self.weights)):
+        print(error)
 
+        for i in range(len(self.weights)):
             self.weights[i] += self.lr * error * inputs[i]
 
+            print("Weights:")
             print(self.weights)

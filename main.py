@@ -31,3 +31,7 @@ targetList = [-1, 1, 1, -1]
 target = sum(targetList)
 
 slp.train(inputs=inputs, target=target)
+
+
+print("Learning Rate:")
+print(slp.lr)
